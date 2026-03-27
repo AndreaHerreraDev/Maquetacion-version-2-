@@ -30,26 +30,39 @@ por el border o por el padding*/
 /*niveles de navegación*/
 /*nivel 0*/
 nav ul {
-    list-style:none;/*para quitar viñetas */
-    text-align: right;/*el elemento ul se desplaza a la derecha*/
+    list-style: none;
+    /*para quitar viñetas */
+    text-align: right;
+    /*el elemento ul se desplaza a la derecha*/
 }
 
 nav ul li {
     /*display: inline-block;/*Dejar los elementos de forma horizontal*/
-    width: 130px; /*tamaño definido para todas las opciones (los elementos li)*/
+    width: 130px;
+    /*tamaño definido para todas las opciones (los elementos li)*/
     /*se agrega el mismo color a todos los elementos de la
-barra de navegación*/
-    background: rgba(164, 34, 166, 0.321);
+    barra de navegación*/
+    background-color: rgba(164, 34, 166, 0.321);
 }
+/*Para que los elementos ocultos cuando pase el mouse, muestre
+los elementos ul*/
+nav ul li:hover > ul {
+    display: block;
+}
+
+
 /*Para que los subítems queden como lo esperado*/
-nav .navegacion>ul>li{
-/*quiere decir que solo las etiquetas que estan directamente relacionadas
+nav .navegacion>ul>li,
+nav .ingreso>ul>li{
+    /*quiere decir que solo las etiquetas que estan directamente relacionadas
 con la clase navegación y solo las li van a tener dichas propuedades*/
-/*Se agrega el display*/
-    display:inline-block;
+    /*Se agrega el display*/
+        position:relative;
+        display: inline-block;
 }
+
 /*Para que el elemento <li> complete el contenedor*/
-nav .ingreso ul li{
+nav .ingreso ul li {
     width: 100%;
 }
 
@@ -59,33 +72,41 @@ nav ul li a {
 al elemento <a>*/
     text-decoration: none;
     /*quitar el subrayado del link del anchor <a>*/
-    color: #210804;
-    padding: 15px 2px; /*Recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
+    color: #d1fff7;
+    padding: 15px 2px;
+    /*Recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
     text-align: center;
-    border-bottom: 2px solid #bf44ca99;/*borde inferior al elemento <a>*/
+    border-bottom: 2px solid #bf44ca99;
+    /*borde inferior al elemento <a>*/
 }
 
 /*Recuerde hover es una pseudo-clase
 el proposito es que algo cambie o resalte cuando pase el cursor
 por descendencia el elemento <a> tendrá este efecto*/
 nav ul li a:hover {
-    background: rgba(164, 34, 166, 0.321);/*una opacidad mientras el puntero
-pasa sobre la opcion*/  
-    border-bottom: 2px solid rgb(0,0,0);
+    background: rgba(164, 34, 166, 0.321);
+    /*una opacidad mientras el puntero
+pasa sobre la opcion*/
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 /*nivel 1 -primer despliegue*/
-nav li ul { 
-    position: absolute;/*Los elemento ul
+nav li ul {
+    position: absolute;
+    /*Los elemento ul
     mantengan la posición*/
+    display: none;
+    left: 0;   
+    right: 0;
+    top: 100%;
+}
+    /*se ocultan los elementos del nivel 1*/
     /*Para las subítems de la opción ingreso*/
-nav .ingreso li ul{
-    width: 14%;/*Se coloca un ancho al elemento de la clase ingreso
-que sea acorde a lo que se necesita*/
-}
-
-}
-
+    nav .ingreso li ul {
+        width: 14%;
+        /*Se coloca un ancho al elemento de la clase ingreso
+    que sea acorde a lo que se necesita*/
+    }
 nav li ul li {
 
 }
