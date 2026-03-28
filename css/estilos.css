@@ -3,8 +3,7 @@
 
 * {
     box-sizing: border-box;
-    /*controlar dimensiones sin que se vean afectadas
-por el border o por el padding*/
+    /*controlar dimensiones sin que se vean afectadas por el border o por el padding*/
     margin: 0;
     padding: 0;
 }
@@ -40,36 +39,36 @@ nav ul li {
     /*display: inline-block;/*Dejar los elementos de forma horizontal*/
     width: 130px;
     /*tamaño definido para todas las opciones (los elementos li)*/
-    /*se agrega el mismo color a todos los elementos de la
-    barra de navegación*/
-    background-color: rgba(164, 34, 166, 0.321);
+    /*se agrega el mismo color a todos los elementos de la barra de navegación*/
+    background-color: rgba(164, 34, 166, 0.5); 
+    
+    /* ASEGURA QUE LOS SUBMENÚS SE POSICIONEN RESPECTO A ESTE ELEMENTO */
+    position: relative; 
 }
-/*Para que los elementos ocultos cuando pase el mouse, muestre
-los elementos ul*/
+
+/*Para que los elementos ocultos cuando pase el mouse, muestre los elementos ul*/
 nav ul li:hover > ul {
     display: block;
 }
 
-
 /*Para que los subítems queden como lo esperado*/
 nav .navegacion>ul>li,
 nav .ingreso>ul>li{
-    /*quiere decir que solo las etiquetas que estan directamente relacionadas
-con la clase navegación y solo las li van a tener dichas propuedades*/
+    /*quiere decir que solo las etiquetas que estan directamente relacionadas con la clase navegación y solo las li van a tener dichas propuedades*/
     /*Se agrega el display*/
-        position:relative;
-        display: inline-block;
+    position:relative;
+    display: inline-block;
 }
 
 /*Para que el elemento <li> complete el contenedor*/
 nav .ingreso ul li {
+    /* esto obliga a que registro e ingreso ocupen los 200px que coloqué arriba */
     width: 100%;
 }
 
 nav ul li a {
     display: block;
-    /*para poder colocarle un margin o un padding
-al elemento <a>*/
+    /*para poder colocarle un margin o un padding al elemento <a>*/
     text-decoration: none;
     /*quitar el subrayado del link del anchor <a>*/
     color: #d1fff7;
@@ -80,47 +79,52 @@ al elemento <a>*/
     /*borde inferior al elemento <a>*/
 }
 
-/*Recuerde hover es una pseudo-clase
-el proposito es que algo cambie o resalte cuando pase el cursor
-por descendencia el elemento <a> tendrá este efecto*/
+/*Recuerde hover es una pseudo-clase el proposito es que algo cambie o resalte cuando pase el cursor por descendencia el elemento <a> tendrá este efecto*/
 nav ul li a:hover {
     background: rgba(164, 34, 166, 0.321);
-    /*una opacidad mientras el puntero
-pasa sobre la opcion*/
+    /*una opacidad mientras el puntero pasa sobre la opcion*/
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 /*nivel 1 -primer despliegue*/
 nav li ul {
     position: absolute;
-    /*Los elemento ul
-    mantengan la posición*/
+    /*los elemento ul mantengan la posición*/
     display: none;
     left: 0;   
-    right: 0;
     top: 100%;
-}
-    /*se ocultan los elementos del nivel 1*/
-    /*Para las subítems de la opción ingreso*/
-    nav .ingreso li ul {
-        width: 14%;
-        /*Se coloca un ancho al elemento de la clase ingreso
-    que sea acorde a lo que se necesita*/
-    }
-nav li ul li {
-
+    
+    /* MANTIENE EL MENÚ POR ENCIMA DE LA IMAGEN DEL HEADER */
+    z-index: 999; 
 }
 
-/*nivel 2 -despligues laterales+*/
+/*para las subítems de la opción ingreso*/
+nav .ingreso li ul {
+    /*se coloca un ancho al elemento de la clase ingreso que sea acorde a lo que se necesita*/
+    width: 190px;
+    /* esto ayuda a que no se pegue a la izquierda */
+    left:auto;
+    /* esto lo alinea al borde derecho para que no se salga de la pantalla */
+    right: 0; 
+}
+
+/* NIVEL 2 - DESPLIEGUES LATERALES PARA PRODUCTOS Y SERVICIOS */
 nav li ul li ul {
-
+    /* DESPLAZA EL SEGUNDO SUBMENÚ HACIA LA DERECHA */
+    left: 130px; 
+    top: 0;
 }
 
 /*encabezado*/
-header .ingreso {
-    width: 15%;
-    height: 100%;
-    float: left;
+header {
+    width: 100%;
+    height: 550px;
+    /*depende del monitor*/
+    background-image: url('../img/fondo.jpg');
+    background-size: 100% 100%;
+    
+    /* PERMITE QUE EL MENÚ DESPLEGABLE SE DESBORDE SIN CORTARSE */
+    overflow: visible; 
 }
 
 /*contenedor para pantallas grandes*/
@@ -133,7 +137,6 @@ header .ingreso {
 
 /*cuerpo*/
 body {
-
     background-image: url('../img/fondo principal.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -159,18 +162,11 @@ nav {
     text-align: center;
 }
 
-/*en su interior a otra caja cuando esten separados*/
 .logo img {
-    /*width: auto;*/
-    /*height: 100%; de los 50px*/
     width: 40px;
     height: 40px;
     border-radius: 50%;
     /*la imagen sea curva*/
-    /*Si se quiere rendondez total se tiene que
-calcular en el ancho y alto en medida
-en pixeles. Teniendo en cuenta la
-altura nav 50px y padding de 5px*/
 }
 
 .navegacion {
@@ -185,23 +181,9 @@ altura nav 50px y padding de 5px*/
     float: left;
 }
 
-/*encabezado*/
-header {
-    width: 100%;
-    height: 550px;
-    /*depende del monitor*/
-    background-image: url('../img/fondo.jpg');
-    background-size: 100% 100%;
-}
-
 /*portafolio*/
-/*#titulo1{
-width: 100%;
-height: 50px;
-}*/
 main#portafolio {
-    /*tiene que estar pegado para que sepa que es de esa etiqueta
-si se separa pensara que es de alguna del interior*/
+    /*tiene que estar pegado para que sepa que es de esa etiqueta si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
     background: rgb(255, 255, 255, 0.9);
@@ -227,17 +209,11 @@ si se separa pensara que es de alguna del interior*/
 /*en div porta hay una etiqueta p que quiero este justificada*/
 .div-porta p {
     margin: 40px 0px 0px 0px;
-    /*cuando hay 2 medidas afecta primero
-arriba y abajo y la otra es izq y der*/
-    /*margin-top: 20px;*/
+    /*cuando hay 2 medidas afecta primero arriba y abajo y la otra es izq y der*/
     text-align: justify;
 }
 
 /*quinenes-somos*/
-/*#titulo2{
-width: 100%;
-height: 50px;
-}*/
 section#quienes-somos {
     width: 100%;
     height: 550px;
@@ -261,10 +237,6 @@ section#quienes-somos {
 }
 
 /*contactenos*/
-/*#titulo3{
-width: 100%;
-height: 50px;
-}*/
 section#contactenos {
     width: 100%;
     height: 550px;
@@ -290,10 +262,4 @@ section#contactenos {
 footer {
     width: 100%;
     height: 50px
-}
-
-.ingreso {
-    width: 15%;
-    height: 100%;
-    float: left;
 }
