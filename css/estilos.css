@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Twinkle+Star&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&family=Twinkle+Star&display=swap');
-
 * {
     box-sizing: border-box;
     /*controlar dimensiones sin que se vean afectadas por el border o por el padding*/
     margin: 0;
     padding: 0;
 }
-
 /*clases especiales*/
 .borde {
     border: 1px solid gray;
 }
-
 .titulo {
     width: 100%;
     height: 50px;
@@ -25,16 +22,65 @@
     font-size: 25px;
     /*puede ser 2em*/
 }
+/*contenedor para pantallas grandes*/
+.contenedor{
+width: 99%;
+max-width: 1280px;
+margin:auto; /*quede centrado*/
+}
+/*cuerpo*/
+body{
+background-image: url('../img/fondo-pagina.jpg');
+background-size: 100% 100%;
+background-attachment: fixed;/*la imagen se quede fija*/
+font-family: 'Chelsea Market', cursive;
+}
+/*navegador*/
+nav{
+width: 100%;
+height: 50px;
+background-color: #DB9F16;
+}
+/*La suma da 100=65+15+20*/
+.logo{
+width: 20%;
+height: 100%;
+float: left;
+padding: 5px;/*no se pegue la imagen logo tanto al borde*/
+/*aplica para la imagen y letras*/
+text-align: center;
+}
+
+/*en su interior a otra caja cuando esten separados*/
+.logo img{
+/*width: auto;*/
+/*height: 100%; de los 50px*/
+width: 40px;
+height: 40px;
+border-radius: 50%;/*la imagen sea curva*/
+/*Si se quiere rendondez total se tiene que
+calcular en el ancho y alto en medida
+en pixeles. Teniendo en cuenta la
+altura nav 50px y padding de 5px*/
+}
+.navegacion{
+width: 65%;
+height: 100%;
+float: left;
+}
+.ingreso{
+width: 15%;
+height: 100%;
+float: left;
+}
+
 
 /*niveles de navegación*/
 /*nivel 0*/
 nav ul {
-    list-style: none;
-    /*para quitar viñetas */
-    text-align: right;
-    /*el elemento ul se desplaza a la derecha*/
+    list-style: none;/*para quitar viñetas */
+    text-align: right;/*el elemento ul se desplaza a la derecha*/
 }
-
 nav ul li {
     /*display: inline-block;/*Dejar los elementos de forma horizontal*/
     width: 130px;
@@ -42,7 +88,7 @@ nav ul li {
     /*se agrega el mismo color a todos los elementos de la barra de navegación*/
     background-color: rgba(164, 34, 166, 0.5); 
     
-    /* ASEGURA QUE LOS SUBMENÚS SE POSICIONEN RESPECTO A ESTE ELEMENTO */
+    /*(no esta en la guía) pero ASEGURA QUE LOS SUBMENÚS SE POSICIONEN RESPECTO A ESTE ELEMENTO */
     position: relative; 
 }
 
@@ -50,13 +96,12 @@ nav ul li {
 nav ul li:hover > ul {
     display: block;
 }
-
 /*Para que los subítems queden como lo esperado*/
 nav .navegacion>ul>li,
 nav .ingreso>ul>li{
     /*quiere decir que solo las etiquetas que estan directamente relacionadas con la clase navegación y solo las li van a tener dichas propuedades*/
     /*Se agrega el display*/
-    position:relative;
+    position:relative;/*(no esta en la guía) pero ASEGURA QUE LOS SUBMENÚS SE POSICIONEN RESPECTO A ESTE ELEMENTO */
     display: inline-block;
 }
 
@@ -79,7 +124,8 @@ nav ul li a {
     /*borde inferior al elemento <a>*/
 }
 
-/*Recuerde hover es una pseudo-clase el proposito es que algo cambie o resalte cuando pase el cursor por descendencia el elemento <a> tendrá este efecto*/
+/*Recuerde hover es una pseudo-clase
+el proposito es que algo cambie o resalte cuando pase el cursor por descendencia el elemento <a> tendrá este efecto*/
 nav ul li a:hover {
     background: rgba(164, 34, 166, 0.321);
     /*una opacidad mientras el puntero pasa sobre la opcion*/
@@ -90,12 +136,7 @@ nav ul li a:hover {
 nav li ul {
     position: absolute;
     /*los elemento ul mantengan la posición*/
-    display: none;
-    left: 0;   
-    top: 100%;
-    
-    /* MANTIENE EL MENÚ POR ENCIMA DE LA IMAGEN DEL HEADER */
-    z-index: 999; 
+    display: none;/*se ocultan los elementos del nivel 1*/
 }
 
 /*para las subítems de la opción ingreso*/
@@ -108,13 +149,11 @@ nav .ingreso li ul {
     right: 0; 
 }
 
-/* NIVEL 2 - DESPLIEGUES LATERALES PARA PRODUCTOS Y SERVICIOS */
+/* NIVEL 2 - Despliefgues  Laterales Para Productos y Servicios */
 nav li ul li ul {
-    /* DESPLAZA EL SEGUNDO SUBMENÚ HACIA LA DERECHA */
-    left: 130px; 
-    top: 0;
+    left: 130px; /*desde la izquierda va a ocupar 130px*/
+    top: 2px;/*quede un poco abajo*/
 }
-
 /*encabezado*/
 header {
     width: 100%;
@@ -149,6 +188,8 @@ nav {
     width: 100%;
     height: 50px;
     background-color: #dba01608;
+    position: fixed;
+    max-width: 1280px;
 }
 
 /*La suma da 100=65+15+20*/
@@ -182,11 +223,15 @@ nav {
 }
 
 /*portafolio*/
+/*#titulo1{
+    width: 100%;
+    height: 50px;
+}*/
 main#portafolio {
     /*tiene que estar pegado para que sepa que es de esa etiqueta si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
-    background: rgb(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.589);
     /*transparencia 0.4*/
 }
 
@@ -237,6 +282,10 @@ section#quienes-somos {
 }
 
 /*contactenos*/
+/*#titulo3{
+    width: 100%;
+    height: 50px;
+}*/
 section#contactenos {
     width: 100%;
     height: 550px;
@@ -247,6 +296,14 @@ section#contactenos {
     height: 100%;
     float: left;
 }
+/*para el video*/
+.div-arr iframe{
+    width: 100%;
+    height: 100%;
+    /*padding: 30px;para el video / el padding es para dejar un espacio entre el borde y el contenido (video)*/
+    border:0;
+}
+
 
 .div-arr {
     width: 100%;

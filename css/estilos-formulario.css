@@ -11,12 +11,12 @@ h1 {
     font-family: 'PlayWrite DK Uloopet Guides';
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: #ffffffaa;
     font-weight: 100;
 }
 
 .row {
-    background-image: url(../img/IMAGEN1.jpg);
+    background-image: url(../img/fondo\ pagina.jpg);
     /*Se agrega una imagen de fondo para el
 ingreso.html*/
     background-size: cover;
@@ -42,7 +42,8 @@ Lo escrito anteriormente es lo mismo que decir .text*/
     padding: 1em;
     font-size: 1em;
     font-family: 'Chelsea Market', cursive;
-    color: #fff;
+    font-style: oblique 10deg; /* El grado es opcional */
+    color: #ffebc7;
     margin: 35px 0 0;
     margin-left: 8px;
     outline: none;

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- este sería para dispositivos-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Empresa</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/IMAGEN1.jpg">
+    <link rel="shortcut icon" href="img/logo.jpg">
 </head>
 <body>
-    <div class="contenedor"> <nav>
+    <div class="contenedor"> 
+    <!--navegador-->
+    <!--<div id ="nav"class=borde></div>-->
+        <nav>
             <div class="logo borde">
-                <img src="img/IMAGEN1.jpg" alt="logo" title="Logo Empresa">
+                <img src="img/logo.jpg" alt="imagen logo" title="Logo Empresa">
             </div>
-
             <div class="navegacion borde">
+                <!--se agrega como lista ul
+                con los elementos li que tienen enlaces-->
                 <ul>
                     <li><a href="#">Inicio</a></li> 
-                    <li><a href="#">Portafolio</a>
+                    <li><a href="#portafoliox">Portafolio</a>
                         <ul>
                             <li><a href="">Productos</a>
                                 <ul>
@@ -34,8 +38,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#quienes-somos">Quiénes somos</a></li>
-                    <li><a href="#contactenos">Contáctenos</a></li>
+                    <li><a href="#quienes">Quiénes somos</a></li>
+                    <li><a href="#contacto">Contáctenos</a></li>
                 </ul>
             </div>
 
@@ -50,11 +54,16 @@
                 </ul>
             </div>
         </nav>
-
+        <!--ESTE ES EL ENCABEZADO-->
+        <!--div id="header"class=borde></div>-->
         <header class="borde"></header>
-
-        <div class="borde titulo">Portafolio</div>
+        
+        <!--portafolio-->
+        <div id="portafoliox" class="borde titulo">Portafolio</div>
+        <!--podria ser section
+        <div id ="portafolio"class=borde>>/div>-->
         <main id="portafolio">
+
             <div class="div-porta borde">
                 <h1>Subtitulo</h1>
                 <img src="img/portafolio1.jpg" alt="amanecer" title="porta1 Empresa">
@@ -80,10 +89,11 @@
                 consequat. Duis aute irure dolor.</p>
             </div>
         </main>
-
-        <div class="borde titulo">Quiénes somos</div>
+<!-- quienes somos -->
+        <div id="quienes" class="borde titulo">Quiénes somos</div>
+        <!--<div  id="quienes somos"class=borde></div> -->
         <section id="quienes-somos">
-            <div class="fila">
+            <div class="fila"> 
                 <div class="col-ext borde"></div>
                 <div class="col-cen borde"></div>
                 <div class="col-ext borde"></div>
@@ -99,16 +109,25 @@
                 <div class="col-ext borde"></div>
             </div>
         </section>
-
-        <div class="borde titulo">Contáctenos</div>
+<!--contactenos -->
+        <div id="contacto" class="borde titulo">Contáctenos</div>
+        <!-- <div id="contactenos"class=borde></div>-->
         <section id="contactenos">
+
             <div class="div-contacto borde"></div>
             <div class="div-contacto">
-                <div class="div-arr borde"></div>
-                <div class="div-aba borde"></div>
+                <!--mapa de google -->
+                <div class="div-arr borde">
+                    <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.645437512658!2d-74.08842899999998!3d4.6571588000000075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e33e50c99ab%3A0x5ad575fb745d822d!2sBiblioteca%20P%C3%BAblica%20Virgilio%20Barco!5e0!3m2!1ses-419!2sco!4v1775011889903!5m2!1ses-419!2sco"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </div>
+        <div class="div-aba borde"></div>
+    </section>
 
+        <!--pie de pagina -->
+        <!-- <div id="footer"class=borde>>/div>-->
         <footer class="borde"></footer>
-    </div> </body>
+    </div> 
+</body>
 </html>
