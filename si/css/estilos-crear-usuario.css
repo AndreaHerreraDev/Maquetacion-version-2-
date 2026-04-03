@@ -1,0 +1,54 @@
+/* Estilos para el Formulario de Registro de Usuarios */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+.form-registro {
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border-top: 5px solid #DB9F16; /* Tu Dorado */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-registro h2 {
+    color: rgb(40, 14, 41); /* Tu Morado oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: bold;
+}
+
+.campo input, .campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.btn-guardar {
+    background-color: rgba(164, 34, 166, 0.8); /* Tu Fucsia */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover {
+    background-color: rgb(40, 14, 41);
+    transform: scale(1.02);
+}

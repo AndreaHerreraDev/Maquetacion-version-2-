@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Usuarios - Mundo Mascota</title>
+<link rel="stylesheet" href="../css/estilos-crear-usuario.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav>
+            <a href="../principal.html">Principal</a> / 
+            <a>Gestión de Usuarios</a> / 
+            <a href="crear-usuarios.html">Registrar Dueño/Personal</a>
+        </nav>
+        <main>
+            <h1>Registrar Nuevo Usuario</h1>
+            <div class="form-comp">
+                <!-- se unen estos datos en un solo FORM para que funcione el envío de datos -->
+                <form action="" method="POST">
+                    <div class="columnas-flex" style="display: flex; gap: 20px;">
+                        
+                        <!-- Columna Izquierda: Datos Personales -->
+                        <div class="form-doble borde-izq">
+                            <div class="form-cuerpo">
+                                <div>
+                                    <label for="nombre">Nombres</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Pérez">
+                                </div>
+                                <div>
+                                    <label for="apellidos">Apellidos</label>
+                                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos del tutor">
+                                </div>
+                                <div>
+                                    <label for="correo">Correo Electrónico</label>
+                                    <input type="email" name="correo" id="correo" placeholder="usuario@mascotas.com">
+                                </div>
+                                <div>
+                                    <label for="contrasena">Contraseña</label>
+                                    <input type="password" name="contrasena" id="contrasena" placeholder="Mínimo 6 caracteres">
+                                </div>
+                                <div>
+                                    <label for="contrasena2">Confirmar Contraseña</label>
+                                    <input type="password" name="contrasena2" id="contrasena2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna Derecha: Datos de Perfil del animal -->
+                        <div class="form-doble borde-der">
+                            <div class="form-cuerpo">
+                                <div class="tipo-radio">
+                                    <label>Género</label><br>
+                                    <input type="radio" name="gender" value="male" checked> Hombre
+                                    <input type="radio" name="gender" value="female"> Mujer
+                                    <input type="radio" name="gender" value="other"> Otro
+                                </div>
+                                <div>
+                                    <label for="fecha-ingreso">Fecha de Registro</label>
+                                    <input type="date" name="fecha-ingreso" id="fecha-ingreso">
+                                </div>
+                                <div>
+                                    <label for="profesion">Ocupación/Especialidad</label>
+                                    <select name="profesion" id="profesion">
+                                        <option value="veterinario">Veterinario/a</option>
+                                        <option value="estilista">Estilista Canino</option>
+                                        <option value="entrenador">Entrenador/a</option>
+                                        <option value="dueno">Dueño de Mascota</option>
+                                        <option value="voluntario">Voluntario</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="tipo-usuario">Rol en el Sistema</label>
+                                    <select name="tipo-usuario" id="tipo-usuario">
+                                        <option value="cliente">Cliente (Tutor)</option>
+                                        <option value="empleado">Personal Staff</option>
+                                        <option value="admin">Administrador</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-pie" style="margin-top: 20px;">
+                                <a href="../index-admin.html" class="btn-enviar">Guardar Registro</a>
+                                <a href="../index-admin.html" class="btn-cancelar">Cancelar</a>
+                            </div>
+                        </div>
+
+                    </div> <!-- Fin de columnas-flex -->
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

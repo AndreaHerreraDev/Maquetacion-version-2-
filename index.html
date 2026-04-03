@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="utf-8"> <!-- este sería para dispositivos-->
+    <meta charset="utf-8">
+    <!-- Optimización para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Empresa</title>
+    <title>Animals family</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logo.jpg">
 </head>
+
 <body>
-    <div class="contenedor"> 
-    <!--navegador-->
-    <!--<div id ="nav"class=borde></div>-->
+    <div class="contenedor">
+        <!-- Navegador -->
         <nav>
             <div class="logo borde">
                 <img src="img/logo.jpg" alt="imagen logo" title="Logo Empresa">
             </div>
             <div class="navegacion borde">
-                <!--se agrega como lista ul
-                con los elementos li que tienen enlaces-->
                 <ul>
-                    <li><a href="#">Inicio</a></li> 
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#portafoliox">Portafolio</a>
                         <ul>
                             <li><a href="">Productos</a>
@@ -42,58 +42,56 @@
                     <li><a href="#contacto">Contáctenos</a></li>
                 </ul>
             </div>
-
             <div class="ingreso borde">
                 <ul>
                     <li><a href="">Ingresar</a>
                         <ul>
                             <li><a href="">Registro</a></li>
-                            <li><a href="">Ingreso</a></li>
+                            <li><a href="html/ingreso.html">Ingreso</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!--ESTE ES EL ENCABEZADO-->
-        <!--div id="header"class=borde></div>-->
+
+        <!-- Encabezado -->
         <header class="borde"></header>
-        
-        <!--portafolio-->
+
+        <!-- Portafolio (Con tus textos y tus imágenes) -->
         <div id="portafoliox" class="borde titulo">Portafolio</div>
-        <!--podria ser section
-        <div id ="portafolio"class=borde>>/div>-->
         <main id="portafolio">
+            <div class="div-porta borde">
+                <h1>Subtitulo 1</h1>
+                <img src="img/portafolio1.jpg" alt="amanecer" title="porta1 Empresa">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.</p>
+            </div>
 
             <div class="div-porta borde">
-                <h1>Subtitulo</h1>
-                <img src="img/portafolio1.jpg" alt="amanecer" title="porta1 Empresa">
+                <h1>Subtitulo 2</h1>
+                <img src="img/portafolio1.jpg" alt="amanecer" title="porta2 Empresa">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor.</p>
             </div>
+
             <div class="div-porta borde">
-                <h1>Subtitulo</h1>
-                <img src="img/portafolio1.jpg" alt="amanecer" title="porta1 Empresa">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor.</p>
-            </div>
-            <div class="div-porta borde">
-                <h1>Subtitulo</h1>
-                <img src="img/portafolio1.jpg" alt="amanecer" title="porta1 Empresa">
+                <h1>Subtitulo 3</h1>
+                <img src="img/portafolio1.jpg" alt="amanecer" title="porta3 Empresa">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor.</p>
             </div>
         </main>
-<!-- quienes somos -->
+
+        <!-- Quiénes somos -->
         <div id="quienes" class="borde titulo">Quiénes somos</div>
-        <!--<div  id="quienes somos"class=borde></div> -->
         <section id="quienes-somos">
-            <div class="fila"> 
+            <div class="fila">
                 <div class="col-ext borde"></div>
                 <div class="col-cen borde"></div>
                 <div class="col-ext borde"></div>
@@ -109,25 +107,32 @@
                 <div class="col-ext borde"></div>
             </div>
         </section>
-<!--contactenos -->
-        <div id="contacto" class="borde titulo">Contáctenos</div>
-        <!-- <div id="contactenos"class=borde></div>-->
-        <section id="contactenos">
 
+        <!-- Contáctenos (Con tu mapa de la Virgilio Barco y tu dirección) -->
+        <div id="contacto" class="borde titulo">Contáctenos</div>
+        <section id="contactenos">
             <div class="div-contacto borde"></div>
             <div class="div-contacto">
-                <!--mapa de google -->
+                <!-- Tu mapa de Google -->
                 <div class="div-arr borde">
-                    <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.645437512658!2d-74.08842899999998!3d4.6571588000000075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e33e50c99ab%3A0x5ad575fb745d822d!2sBiblioteca%20P%C3%BAblica%20Virgilio%20Barco!5e0!3m2!1ses-419!2sco!4v1775011889903!5m2!1ses-419!2sco"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.645437512658!2d-74.08842899999998!3d4.6571588000000075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e33e50c99ab%3A0x5ad575fb745d822d!2sBiblioteca%20P%C3%BAblica%20Virgilio%20Barco!5e0!3m2!1ses-419!2sco!4v1775011889903!5m2!1ses-419!2sco" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Tu información de empresa -->
+                <div class="div-aba borde">
+                    <p class="direccion">Dirección: Avenida Carrera 60 # 57 - 60</p>
+                    <p>Teléfonos: (601) 5803010, Ext 3000</p>
+                    <p>Bogotá D.C</p>
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <img class="facebook" src="img/facebook.png" alt="Facebook">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="div-aba borde"></div>
-    </section>
+        </section>
 
-        <!--pie de pagina -->
-        <!-- <div id="footer"class=borde>>/div>-->
+        <!-- Pie de página -->
         <footer class="borde"></footer>
-    </div> 
+    </div>
 </body>
+
 </html>
