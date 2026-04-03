@@ -15,7 +15,12 @@ nav ul li {
     width: 130px;/*tamaño definido para todas las opciones (los elementos li)*/
 }
 
-nav ul li a {}
+nav ul li a {
+    display: block; /*para poder colocarle un margin o un padding
+    al elemento <a>*/
+    text-decoration: none;/*quitar el subrayado del link del anchor <a>*/
+    color: #ffff;
+}
 
 /*Recuerde hover es una pseudo-clase
 el proposito es que algo cambie o resalte cuando pase el cursor
