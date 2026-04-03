@@ -12,6 +12,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;/*dejar los elementos de forma horizontal*/
+    width: 130px;/*tamaño definido para todas las opciones (los elementos li)*/
 }
 
 nav ul li a {}
@@ -19,7 +20,9 @@ nav ul li a {}
 /*Recuerde hover es una pseudo-clase
 el proposito es que algo cambie o resalte cuando pase el cursor
 por descendencia el elemento <a> tendrá este efecto*/
-nav ul li a:hover {}
+nav ul li a:hover {
+
+}
 
 /*nivel 1 -primer despliegue*/
 nav li ul {}
