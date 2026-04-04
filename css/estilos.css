@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     /*controlar dimensiones sin que se vean afectadas
 por el border o por el padding*/
@@ -18,6 +19,12 @@ por el border o por el padding*/
     height: 50px;
     padding: 10px;
     background-color: aliceblue;
+    font-family: 'Oswald wght', cursive;
+    color: #011F26;
+    text-align: center;
+    /*aumentar el titulo puede ser h1 pero...*/
+    font-size: 25px;
+    /*puede ser 2em*/
 }
 
 /*contenedor para pantallas grandes*/
@@ -34,6 +41,7 @@ body {
     background-size: 100% 100%;
     background-attachment: fixed;
     /*la imagen se quede fija*/
+    font-family: 'Oswald wght', cursive;
 }
 
 /*navegador*/
@@ -99,7 +107,8 @@ main#portafolio {
 si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
-    background: rgba(157, 151, 236, 0.397);/*transparencia 0.4*/
+    background: rgba(157, 151, 236, 0.397);
+    /*transparencia 0.4*/
 }
 
 .div-porta {
