@@ -20,6 +20,8 @@ nav ul li a {
     al elemento <a>*/
     text-decoration: none;/*quitar el subrayado del link del anchor <a>*/
     color: #ffff;
+    padding: 15px 2px;/*recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
+    text-align: center;
 }
 
 /*Recuerde hover es una pseudo-clase
