@@ -28,7 +28,7 @@ por el border o por el padding*/
 
 /*cuerpo*/
 body {
-    background-image: url('../img/fondo-pagina.jpg');
+    background-image: url('../img/fondo\ pagina.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
     /*la imagen se quede fija*/
@@ -97,7 +97,7 @@ main#portafolio {
 si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
-    background: rgb(255,255,255,0.9);/*transparencia 0.4*/
+    background: rgba(157, 151, 236, 0.397);/*transparencia 0.4*/
 }
 
 .div-porta {
