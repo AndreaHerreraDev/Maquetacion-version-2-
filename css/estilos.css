@@ -8,6 +8,7 @@
 /*nivel 0*/
 nav ul {
     list-style: none;/*para quitar viñetas*/
+    text-align: right;/*el elemento el se desplaza a la derecha*/
 }
 
 nav ul li {
@@ -19,7 +20,7 @@ nav ul li a {
     display: block; /*para poder colocarle un margin o un padding
     al elemento <a>*/
     text-decoration: none;/*quitar el subrayado del link del anchor <a>*/
-    color: #ffff;
+    color: #0700ca;
     padding: 15px 2px;/*recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
     text-align: center;
 }
