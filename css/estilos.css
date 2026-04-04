@@ -23,12 +23,14 @@ nav ul li a {
     color: #0700ca;
     padding: 15px 2px;/*recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
     text-align: center;
+    border: bottom 2px solid #fff,/*borde inferior al elemento <a>*/
 }
 
 /*Recuerde hover es una pseudo-clase
 el proposito es que algo cambie o resalte cuando pase el cursor
 por descendencia el elemento <a> tendrá este efecto*/
 nav ul li a:hover {
+    background: rgb(233, 136, 63);/*una opacidad mientras el puntero pasa sobre la opcion*/
 
 }
 
