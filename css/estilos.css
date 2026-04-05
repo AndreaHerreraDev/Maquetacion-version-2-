@@ -138,6 +138,10 @@ nav li ul {
     position: absolute;/*Los elemento ul mantengan la posición*//*al colocar esto registro e ingreso quedan fuera*/
 
 }
+/*Para las subítems de la opción ingreso*/ 
+nav .ingreso li ul{
+    width: 12.57%;/*Se coloca un ancho al elemento de la clase ingreso 
+que sea acorde a lo que se necesita en mi caso el 12.57 queda perfecto*/ 
 
 nav li ul li {
 
