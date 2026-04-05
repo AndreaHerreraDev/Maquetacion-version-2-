@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Twinkle+Star&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
-/* 2. CUERPO Y FONDO */
 body {
-    font-family: 'Iosevka Charon Mono', cursive; /* Asegúrate de tener esta fuente o cambiarla por una del import */
-    background: #252121;
+    font-family: 'Story Script', cursive; 
+    background:rgba(255, 255, 255, 0.753);
     background-attachment: fixed;
 }
 
 h1 {
-    font-family: 'PlayWrite DK Uloopet Guides', cursive;
+    font-family: 'Story Script', cursive;
     text-align: center;
     font-size: 3em;
     color: #ff4db5a2; 
     font-weight: 100;
 }
 
-/* 3. CAJA DE LOGIN */
+/* Esta es la caja del login*/
 .row {
-    background-image: url(../img/portafolio2.jpg); 
+    background-image: url(../img/portafolio2.jpg); /*se agrega una imagen de fondo para el ingresso*/
     background-size: cover;
     background-position: center;
     width: 420px;
