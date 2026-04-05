@@ -102,6 +102,11 @@ nav ul li {
 la barra de navegación*/ 
 background-color: #011F26;
 }
+/*Para que los elementos ocultos cuando pase el mouse, muestre 
+los elementos ul*/ 
+nav ul li:hover ul{
+    display: block; 
+}
 /*Para que los subítems queden como lo esperado*/ 
 nav .navegacion>ul>li{ 
     /*quiere decir que solo las etiquetas que estan 
@@ -136,7 +141,7 @@ border-bottom: 2px solid rgb(81, 197, 233);
 /*nivel 1 -primer despliegue*/
 nav li ul {
     position: absolute;/*Los elemento ul mantengan la posición*//*al colocar esto registro e ingreso quedan fuera*/
-display:none;/*se ocultan los elementos del nivel 1*/
+display:none;/*se ocultan los elementos del nivel 1, pero el menu de navegacion se me repite asi que lo dejo como comentario en el index*/
 }
 /*Para las subítems de la opción ingreso*/ 
 nav .ingreso li ul{
