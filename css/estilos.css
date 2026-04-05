@@ -92,21 +92,32 @@ altura nav 50px y padding de 5px*/
 /*nivel 0*/
 nav ul {
     list-style: none;/*para quitar viñetas*/
+    text-align: right;/*el elmento ul se desplaza a la derechha*/
+
 }
 
 nav ul li {
     display:inline-block;/*Dejar los elementos de forma horizontal*/
+    width: 130px;/*tamaño definido para todas las opciones(los elementosli)*/
 }
 
 nav ul li a {
-
+    display:block; /*para poder colocarle un margin o un padding
+    al elemento <a>*/
+    text-decoration: none;/*quitar el subrayado del link del anchor <a>*/ 
+    color: #ffffff;
+    padding: 15px 2px; /*Recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/ 
+    text-align: center;
+    border-bottom: 2px solid #dd479f;/*borde inferior al elemento <a>*/
 }
 
 /*Recuerde hover es una pseudo-clase
 el proposito es que algo cambie o resalte cuando pase el cursor
 por descendencia el elemento <a> tendrá este efecto*/
 nav ul li a:hover {
-
+background: #00808056;/*una opacidad mientras el puntero 
+pasa sobre la opcion*/
+border-bottom: 2px solid rgb(81, 197, 233);
 }
 
 /*nivel 1 -primer despliegue*/
