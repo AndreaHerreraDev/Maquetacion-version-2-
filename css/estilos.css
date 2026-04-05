@@ -18,9 +18,9 @@ por el border o por el padding*/
     width: 100%;
     height: 50px;
     padding: 10px;
-    background-color: #011F26;
+    background-color: #0F1E2A;
     font-family: 'Oswald wght', cursive;
-    color: #aaee58;
+    color: #00CED1;
     text-align: center;
     /*aumentar el titulo puede ser h1 pero...*/
     font-size: 25px;
@@ -206,6 +206,8 @@ si se separa pensara que es de alguna del interior*/
 arriba y abajo y la otra es izq y der*/
     /*margin-top: 20px;*/
     text-align: justify;
+    font-size: 17px; /*Agregue esto para el tamaño de la letra, sentía que estaba muy pequeña*/
+    font-weight:normal
 }
 
 /*quinenes-somos*/
@@ -250,7 +252,13 @@ section#contactenos {
     height: 100%;
     float: left;
 }
-
+/*para el video*/
+.div-arr iframe{ 
+    width: 100%; /*100% para que ocupwn la totalidad del contenedor <div> */
+    height: 100%; 
+/* padding: 30px;/*para dejar un espacio entre el borde y el contenido*/
+    border: 0;
+}
 .div-arr {
     width: 100%;
     height: 70%;
