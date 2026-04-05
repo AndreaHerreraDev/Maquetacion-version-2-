@@ -104,7 +104,7 @@ background-color: #011F26;
 }
 /*Para que los elementos ocultos cuando pase el mouse, muestre 
 los elementos ul*/ 
-nav ul li:hover ul{
+nav ul li:hover>ul{/*todas las opciones se muestran al desplazar el cursor sobre portafolio. La razón por la que se muestran todas las opciones es por los selectores donde está la propiedad display afectan a todos descendientes ul, es decir, que todos los ítems descendientes se observen por dicha propiedad*/
     display: block; 
 }
 /*Para que los subítems queden como lo esperado*/ 
@@ -141,19 +141,22 @@ border-bottom: 2px solid rgb(81, 197, 233);
 /*nivel 1 -primer despliegue*/
 nav li ul {
     position: absolute;/*Los elemento ul mantengan la posición*//*al colocar esto registro e ingreso quedan fuera*/
-    /*display:none;/*se ocultan los elementos del nivel 1, pero el menu de navegacion se me repite asi que lo dejo como comentario en el index*/
+    display:none;/*se ocultan los elementos del nivel 1*/
 }
 /*Para las subítems de la opción ingreso*/ 
 nav .ingreso li ul{
     width: 12.57%;/*Se coloca un ancho al elemento de la clase ingreso 
 que sea acorde a lo que se necesita en mi caso el 12.57 queda perfecto*/ 
-
+}
 nav li ul li {
+    position: relative;
 
 }
 
 /*nivel 2 -despligues laterales+*/
 nav li ul li ul {
+    left: 130px;/*desde la izquierda va a ocupar 130px*/ 
+    top:2px;/*quede un poco abajo*/
 
 }
 
