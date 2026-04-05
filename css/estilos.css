@@ -17,8 +17,9 @@ por el border o por el padding*/
 .titulo {
     width: 100%;
     height: 50px;
-    padding: 10px;
-    background-color: #0F1E2A;
+    /*padding: 10px;*/
+    padding: 1%;
+    background-color: #011F26;
     font-family: 'Oswald wght', cursive;
     color: #00CED1;
     text-align: center;
@@ -38,7 +39,7 @@ por el border o por el padding*/
 /*cuerpo*/
 body {
     background-image: url('../img/fondo\ pagina.jpg');
-    background-size: 100% 100%;
+    background-size: 100%;
     background-attachment: fixed;
     /*la imagen se quede fija*/
     font-family: 'Oswald wght', cursive;
@@ -50,6 +51,7 @@ nav {
     height: 50px;
     background-color: #011F26;
     position: fixed;
+    max-width: 1280px; /*la idea era el mismo valor máximo de ancho que tiene el <div> .contendor en el elemento del <nav> en la hoja de estilo.css (max-width: 1280px;), solo era cambiar esto, por que el boton de ingreso me aparecia en la esquina derecha*/ 
 }
 
 /*La suma da 100=65+15+20*/
@@ -268,10 +270,24 @@ section#contactenos {
 .div-aba {
     width: 100%;
     height: 30%;
+    padding: 2px; 
+    background: rgba(255, 255, 255, 0.753);
+    text-align: center;
 }
+/*dirección contacto*/ 
+.direccion{
+    margin-top: 10px; 
+} 
+/*redes sociales*/ 
+.facebook{ width: 40px;
+    height:40px; 
+    padding: 2px;
+    margin-top: 10px; 
+} 
 
 /*footer*/
 footer {
     width: 100%;
     height: 50px;
+    background-color: #011F26;
 }
