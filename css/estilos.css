@@ -93,19 +93,29 @@ altura nav 50px y padding de 5px*/
 nav ul {
     list-style: none;/*para quitar viñetas*/
     text-align: right;/*el elmento ul se desplaza a la derechha*/
-
 }
 
 nav ul li {
-    display:inline-block;/*Dejar los elementos de forma horizontal*/
+    /*display:inline-block;/*Dejar los elementos de forma horizontal*/
     width: 130px;/*tamaño definido para todas las opciones(los elementosli)*/
 }
-
+/*Para que los subítems queden como lo esperado*/ 
+nav .navegacion>ul>li{ 
+    /*quiere decir que solo las etiquetas que estan 
+    directamente relacionadas con la clase navegación y 
+    solo las li van a tener dichas propuedades*/ 
+    /*Se agrega el display*/
+    display:inline-block; 
+}
+/*Para que el elemento <li> complete el contenedor*/ 
+nav .ingreso ul li{ 
+    width: 100%; 
+}
 nav ul li a {
     display:block; /*para poder colocarle un margin o un padding
     al elemento <a>*/
     text-decoration: none;/*quitar el subrayado del link del anchor <a>*/ 
-    color: #ffffff;
+    color: #27ccf5;
     padding: 15px 2px; /*Recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/ 
     text-align: center;
     border-bottom: 2px solid #dd479f;/*borde inferior al elemento <a>*/
@@ -122,6 +132,7 @@ border-bottom: 2px solid rgb(81, 197, 233);
 
 /*nivel 1 -primer despliegue*/
 nav li ul {
+    position: absolute;/*Los elemento ul mantengan la posición*//*al colocar esto registro e ingreso quedan fuera*/
 
 }
 
