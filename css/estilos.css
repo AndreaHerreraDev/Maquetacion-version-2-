@@ -136,7 +136,7 @@ border-bottom: 2px solid rgb(81, 197, 233);
 /*nivel 1 -primer despliegue*/
 nav li ul {
     position: absolute;/*Los elemento ul mantengan la posición*//*al colocar esto registro e ingreso quedan fuera*/
-
+display:none;/*se ocultan los elementos del nivel 1*/
 }
 /*Para las subítems de la opción ingreso*/ 
 nav .ingreso li ul{
