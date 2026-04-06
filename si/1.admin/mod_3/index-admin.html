@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Administrador - AstroShop</title>
+    <title>Administrador</title>
     <!-- Tus rutas de favicon y estilos -->
-    <link rel="shortcut icon" href="../../img/favicon.jpg">
+    <link rel="shortcut icon" href="../../img/favicon.jpg"> <!--de las imagenes que se descargan previamente-->
     <link rel="stylesheet" href="../../css/estilos-admin.css">
 </head>
 
 <body>
     <div class="contenedor">
-        <!-- Navegador unificado -->
+        <!-- Navegador -->
         <nav>
             <div class="logo">
                 <img src="../../img/logo del sistema.jpg" alt="Logo Sistema">
@@ -24,8 +24,10 @@
                             <ul>
                                 <li><a href="">Opción A</a>
                                     <ul>
-                                        <!-- Enlace a PDF (Asegúrate de que la carpeta doc exista) -->
-                                        <li><a href="../../doc/pdf/mapa-navegacion.pdf" target="area-principal">Opción A-1 doc</a></li>
+                                        <!--se agrego en la carpeta doc otra carpeta para archivos pdf y un archivo pdf para que se muestre -->
+                                        <li><a href="../../../doc/reportes/pdf/prompt-platzi.pdf"
+target="area-principal">Opción A-1 doc
+                                        </a></li>
                                         <li><a href="">Opción A-2</a></li>
                                         <li><a href="">Opción A-3</a></li>
                                     </ul>
@@ -34,6 +36,8 @@
                                     <ul>
                                         <li><a href="">Opción B-1</a></li>
                                         <li><a href="">Opción B-2</a></li>
+                                        <li><a href="">Opción B-3</a></li>
+                                        <li><a href="">Opción B-4</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -46,17 +50,16 @@
                 <ul>
                     <li><a href="">Administrador</a>
                         <ul>
-                            <!-- Tu nombre de archivo: configura-perfil.html -->
-                            <li><a href="mod_1_usuarios/configura-perfil.html" target="area-principal">Configuración</a></li>
-                            <li><a href="../../../index.html">Salir</a></li>
+                            <li><a href="../mod_1_usuarios/configura-perfil.html" target="area-
+principal">Configuración</a>
+                </div>
+            </div>
+<!--                            <li><a href="../../../index.html">Salir</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <aside>
-            <!-- Perfil con tus imágenes -->
             <div class="borde mod-perfil">
                 <div class="img-perfil">
                     <img class="borde foto-admin" src="../../img/foto de perfil para admin.png">
@@ -64,18 +67,21 @@
                 <div class="descr-perfil">
                     <h1>Administrador</h1>
                     <p>Nombre completo</p>
-                    <a href="mod_1_usuarios/configura-perfil.html" target="area-principal">Configuración</a>
+                    <a href="../mod_1_usuarios/configura-perfil.html" target="area-
+principal">Configuración</a>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Módulos de Gestión -->
             <div class="borde mod-usuarios">
                 <h3>Módulo 1</h3>
                 <h4>Gestión de usuarios</h4>
                 <div class="opciones">
-                    <a href="mod_1_usuarios/crear-usuarios.html" target="area-principal">Crear Usuario</a>
-                    <a href="mod_1_usuarios/consultar-usuarios.html" target="area-principal">Consultar Usuarios</a>
-                    <a href="mod_1_usuarios/reporte-usuarios.html" target="area-principal">Reporte Usuario</a>
+                    <a href="../mod_1_usuarios/crear-usuarios.html" target="area-
+                    principal">Crear Usuario</a>
+                    <a href="../mod_1_usuarios/consultar-usuarios.html" target="area-
+                    principal">Consultar Usuarios</a>
+                    <a href="../mod_1_usuarios/reporte-usuarios.html" target="area-
+                    principal">Reporte Usuario</a>
                 </div>
             </div>
 
@@ -91,6 +97,7 @@
         </aside>
 
         <!-- Área donde se cargan los formularios -->
+        <!--principal-->
         <main>
             <iframe name="area-principal" src="principal.html"></iframe>
         </main>
