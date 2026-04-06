@@ -1,29 +1,30 @@
 /* Imports de tus fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Twinkle+Star&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Story+Script&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playwrite+DK+Uloopet+Guides&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Chelsea Market', cursive; /* Tu fuente principal */
+    font-family: 'Iosevka Charon Mono', cursive; 
 }
 
 /* Clases especiales */
 .borde {
-    border: 1px solid #aaa;
+    border: 1px solid #a73636;;
 }
 
 /* Contenedor */
 .contenedor {
     width: 100%;
+    /*height: 100vh;*/
     max-width: 1280px;
     background: rgba(255, 255, 255, 0.95);
     margin: auto;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
-/* Navegador Superior */
+/* Navegador  */
 nav {
     width: 100%;
     height: 50px;
@@ -33,7 +34,7 @@ nav {
     width: 20%;
     height: 100%;
     text-align: center;
-    background: #F4F3F3;
+    background: #6a9eb6;
     float: left;
 }
 
@@ -41,30 +42,40 @@ nav {
     width: auto;
     height: 100%;
 }
-
+/*barra de navegacion*/
 .navega {
     width: 65%;
     height: 100%;
-    background: rgba(164, 34, 166, 0.321); /* Tu morado suave */
+    background: rgba(164, 34, 166, 0.321); 
     float: left;
 }
-
+/*div que contiene el menu de opciones*/ 
+.navega .documentacion{ 
+    width: 15.9%; 
+    height: 100%; 
+    float: left; 
+    font-size: 0.7em;
+    background:#011F26; 
+}
 .navega .notificacion {
-    width: 100%; /* Ajustado para ocupar el espacio */
+    width: 100%; 
     height: 100%;
     padding-right: 20px;
     text-align: right;
-    line-height: 50px; /* Centra el texto verticalmente */
+    float: left;
+    line-height: 50px; /*  se centra el texto verticalmente */
 }
-
+/*Estilo donde esta la opción arriba a la 
+derecha de administrador*/
 .ingreso {
     width: 15%;
     height: 100%;
-    background: rgb(40, 14, 41); /* Morado oscuro para contrastar */
+    background:#011F26; 
     float: left;
 }
 
 /* Menús Desplegables */
+/* nivel 0 */
 nav ul {
     list-style: none;
     text-align: right;
@@ -75,44 +86,77 @@ nav ul li {
     position: relative;
     display: inline-block;
 }
-
+nav ul li:hover>ul{ 
+    display: block; 
+} 
+/*opciones*/ 
+nav .navega ul li{ 
+    background: #333; 
+    /*background:#DB9F16;*/ 
+} 
+nav .ingreso ul li{
+    width: 100%; 
+}
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #27ccf5;
     padding: 15px 5px;
     text-align: center;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
-
-nav ul li:hover > ul {
+nav .ingreso ul li a{ 
+    display: block; 
+    text-decoration: none; 
+    color: #fff; 
+    padding: 11px 5px; 
+    text-align: center; 
+    border-bottom: 3px solid #aaa; 
+}
+nav ul li a:hover{ 
+    background: rgba(0,0,0,0.5); 
+    border-bottom: 3px solid #aaa; } 
+/*nav ul li :hover > ul {
     display: block;
+}*/
+
+/* Nivel 1 */ 
+nav li ul{ 
+    position: absolute; 
+    display: none; 
 }
 
-/* Estilo del submenú Admin */
+/*las opciones del menu administrador arriba a la derecha*/
 nav .ingreso li ul {
-    background: rgba(251, 41, 255, 0.9); /* Tu rosa vibrante */
-    width: 180px; /* Un poco más ancho para los nombres */
+    background:rgba(0,0,0,0.5); 
+    width: 190px; 
     right: 0;
     position: absolute;
 }
-
-/* Barra Lateral (Mundo Mascota Admin) */
+nav li ul li{ 
+    position: relative; 
+}
+/* Nivel 2 */ 
+nav li ul li ul{ 
+    left: 130px; 
+    top: 2px;
+}
+/* Barra Lateral */
 aside {
     width: 20%;
     height: 750px;
-    background: rgb(40, 14, 41); /* Tu fondo morado oscuro */
+    background: rgb(52, 20, 53); /* Tu fondo morado oscuro */
     color: #fff;
     float: left;
     padding-top: 10px;
 }
 
-aside h3, aside h4 {
+aside h3  {
     text-align: center;
-    margin: 15px 0;
-    color: #ffb3e6; /* Rosa claro para títulos */
+    margin-bottom: 10px ;
 }
-
+aside h4{ 
+    margin-bottom: 10px; }
 aside a {
     display: block;
     text-decoration: none;
