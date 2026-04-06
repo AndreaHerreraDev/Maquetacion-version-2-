@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body {
-    font-family: 'Story Script', cursive; 
+    font-family: 'Raleway', cursive; 
     background:rgba(255, 255, 255, 0.753);
     background-attachment: fixed;
 }
 
 h1 {
-    font-family: 'Story Script', cursive;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 3em;
-    color: #ff4db5a2; 
+    color: #008080d5;
     font-weight: 100;
 }
 
@@ -24,69 +24,78 @@ h1 {
     height: 450px;
     padding: 10px;
     margin: auto;
+    /*border-top: 7px solid #e42148;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);*/
 }
 
-/* 4. INPUTS (TEXTO Y CLAVE) */
+/*aqui estaran los imputs*/
 .text {
     display: block;
     width: 85%;
     border: none;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #27ccf5;
     padding: 1em;
     font-size: 1em;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Raleway', cursive;
     font-style: oblique 10deg; 
-    color: #ffe3e3;
+    color: #D1DCDE;
     margin: 35px 0 0 8px;
+    margin-left: 8px;
     outline: none;
-    background-color: transparent;
     transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background-color: transparent;
 }
 
-/* Placeholder (el texto gris que desaparece al escribir) */
+/* Placeholder (el texto gris que no se muestra al escribir) */
 ::-webkit-input-placeholder {
     color: #fff;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', Dancing Script;
 }
 
-/* 5. BOTÓN DE ENTRADA */
 input[type="submit"] {
     font-size: 1em;
-    background-color: rgba(164, 34, 166, 0.321); /* Tu morado */
+    background-color: rgba(164, 34, 166, 0.473); 
     color: #fff;
-    font-family: 'Story Script', cursive; 
+    font-family: 'Raleway', cursive; 
     width: 100%;
     height: 50px;
     outline: none;
     border: none;
+    /*cursor:pointer;*/
     margin: 3em 0;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
     transition: 0.5s all;
     text-align: center;
-    cursor: pointer;
+    letter-spacing: 1px;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(4, 2, 2);
-    transform: translateY(9px); /* Corrección de 'tranform' a 'transform' */
+    background-color: rgb(156, 81, 81);
+    transform: translateY(9px); 
+    -webkit-tranform: translateY(9px); 
+    -ms-tranform: translateY(9px); 
+    -o-tranform: translateY(9px); 
+    transform: translateY(9px); 
 }
 
-/* 6. ENLACES INFERIORES */
 .form-p {
     margin-top: 5px;
     font-size: 1.1em;
-    color: #fff;
+    color: #701818;
+    letter-spacing: 3px;
     text-align: center;
 }
 
 .form-p a {
-    color: #000000; /* Tu color negro */
+    color: #27c0db; 
     text-decoration: none;
+    -webkit-transition: .5s all; 
+    -ms-transition: .5s all; 
     transition: .5s all;
-    font-weight: bold;
 }
 
 .form-p a:hover {
-    color: rgba(251, 0, 255, 0.98); /* Tu rosa vibrante */
-}
+    color:rgb(156, 81, 81);
+} 
